@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: linear-gradient(to left, #fdfbfb, #ebedee);
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+li{
+    list-style: none;
+}
+/* Navigation bar */
+.container{
+    margin: 20px auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-logo span{
+    color: rgb(155, 150, 150)
+}
+
+.nav-logo h1{
+    color: #000;
+}
+.nav-links ul{
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 16px;
+    color: #333;
+}
+
+.nav-links li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #ddd;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.nav-links li:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #ddd;
+    display: block;  
+}
+
+.nav-btn button{
+    margin: 0 10px;
+    font-size: 17px;
+    padding: 8px 20px;
+    color: #333;
+}
+
+.nav-btn button:active{
+    transform: scale(.97);
+}
+
+.signin-btn{
+    border: 1px solid rgb(155, 150, 150);
+    color: #434;
+    border-radius: 50px;
+    background: transparent;
+    transition: .5s ease-in;
+}
+
+.signin-btn:hover{
+    background-color: rgb(155, 150, 150);
+    color: #fff;
+    transition: .7s ease-in-out;
+}
+
+.signup-btn{
+    border: 1px solid rgb(155, 150, 150);
+    border-radius: 50px;
+    background-color: rgb(155, 150, 150);
+    color: #fff;
+}
+
+
+/*showcase */
+.main-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 80%;
+}
+
+.main-banner{
+    margin: 40px 0;
+}
+
+.main-banner .banner-pic{
+    box-shadow: 1px 1px 15px rgb(128, 127, 127);
+}
+
+.main-banner .dot-1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 600px;
+    z-index: -1;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box{
+   display: flex;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.1);
+   border: none;
+   margin: 10px 10px;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 1px 1px 5px #ddd;
+   
+}
+
+.box i{
+    color: rgba(124, 123, 123, 0.849);
+}
+
+.box-info{
+  margin: 0 15px; 
+}
+.box-info h1{
+    margin: 15px 0 5px 0;
+    color: rgba(124, 123, 123, 0.849);
+}
+
+.box-info h3{
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.box-info a{
+    color: royalblue;
+}
+.box-info a:hover{
+    font-weight: bold;
+}
+
+
+/* laptops */
+.laptops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.laptops h2{
+    margin: 15px 0;
+}
+
+.lap-cards{
+    display: flex;
+    margin: 25px 50px;
+}
+
+.card{
+    margin: 0 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(139, 138, 138);
+    background-color: #fff;
+    width: 220px;
+    /* transform: translateX(100px); */
+}
+
+.card-img{
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card p{
+    text-align: center;
+    padding: 0 5px;
+}
+.card h4{
+    text-align: center;
+    color: #19e950;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.card-btn {
+    display: flex;
+}
+
+.card-btn button{
+    width: 50%;
+    margin: 10px 5px;
+    padding: 10px 0;
+    font-size: 15px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.card-btn .buy-btn{
+    border: 2px solid #C0C0C0;
+    background-color: transparent;
+
+}
+.card-btn .add-btn{
+    border: 2px solid #C0C0C0;
+    background-color: #C0C0C0;
+    color: #fff;
+}
+
+.arrow-btn{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+}
+
+.right-btn{
+    top: 50%;
+    right: 0;
+}
+.left-btn{
+    top: 50%;
+    left: 0;
+}
+
+
+
+.move-right{
+    transform: translateX(100px);
+}
+.move-left{
+    transform: translateX(-100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Utilities */
+.lap-1{
+    background-image: url(./img/laptops/macbook13.jpg);
+}
+.lap-2{
+    background-image: url(./img/laptops/matebook15.jpg);
+}
+.lap-3{
+    background-image: url(./img/laptops/msi14.jpg);
+}
+.lap-4{
+    background-image: url(./img/laptops/pavlion.jpg);
+}
+.lap-5{
+    background-image: url(./img/laptops/zenbook13.jpg);
+}
